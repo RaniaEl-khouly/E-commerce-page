@@ -11,6 +11,7 @@ body {
         }
 
 .container{
+     position: relative;
     display: flex;
    /* width: 100%;*/
     color: rgb(255, 255, 255);
@@ -18,7 +19,7 @@ body {
     align-items: center;
     
     margin: 30px 60px 30px -55px;
-    position: relative;
+   
 }
 
 
@@ -30,9 +31,9 @@ body {
  
 }
 
-/* Mobile Menu Styles */
+/*/* Mobile Menu Styles 
         .mobile-menu {
-           /* display: none;*/
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -62,7 +63,7 @@ body {
             cursor: pointer;
             margin-bottom: 30px;
         }
-
+*/
 .logo{
 cursor: pointer;
 margin-top: -15px;
@@ -235,7 +236,7 @@ hr.nav-hr{
 }
 
 .mobile{
- /*   display: none;*/
+    display: none;
     position: fixed;
     top: 70px;
     left: -5px;
@@ -458,6 +459,9 @@ svg{
 }*/
 
 @media  (max-width: 900px) {
+    body{
+        max-width: 900px;
+    }
     .navbar{
         display: none;
     }
@@ -465,17 +469,29 @@ svg{
     .brand img{
 padding-left: 10px;
     }
-    .section {
-                flex-direction: column;
-                align-items: center;
-                gap: 0;
+.section {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
             }
-            
-    .pictures, 
+
+.pictures{
+    width: 20%;
+}
+   .details{
+    width: 25%;
+   }  
+   
+   .image img{
+    width: 350px;
+    height: 350px;
+   }
+    /*.pictures, 
     .details{
                 flex: 1 1 auto;
                 width: 100%;
-            }
+            }*/
     .mobile{
         display: block;
     }
