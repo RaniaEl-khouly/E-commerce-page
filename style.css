@@ -246,10 +246,10 @@ hr.nav-hr{
 /*ssssssection*/
 .section{
     position: relative;
-   width:90%;
+    width:90%;
     margin-top: 80px;
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-block;
+   /* justify-content: space-between;*/
    /* align-items: center;*/
    /*flex-direction: row;*/
     
@@ -266,7 +266,7 @@ width: 30%;
     position: absolute;
     right: 20px;
     width: 35%;
-    display: block;
+    /*display: block;*/
   /*flex-wrap: wrap;*/
   margin-top: 60px;
     
@@ -280,7 +280,7 @@ width: 30%;
     -moz-border-radius:20px ;
     -ms-border-radius:20px ;
     -o-border-radius:20px ;
-    display: flex;
+    display: inline-block;
 }
 .details h6{
     text-transform:uppercase;
@@ -470,17 +470,17 @@ svg{
 padding-left: 10px;
     }
 .section {
-    width: 50%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     gap: 0;
             }
 
 .pictures{
-    width: 20%;
+    width: 90%;
 }
    .details{
-    width: 25%;
+    width: 90%;
    }  
    
    .image img{
