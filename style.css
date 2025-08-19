@@ -17,11 +17,14 @@ body {
     color: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
-    
     margin: 30px 60px 30px -55px;
+    
    
 }
-
+a{
+    text-decoration: none;
+  
+}
 
 
 .navbar{
@@ -29,6 +32,34 @@ body {
     position: absolute;
    left: 240px;
  
+}
+#mobile{
+    display: none;
+}
+#side{
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+#close{
+    margin-bottom: 40px;
+}
+.menu-item{
+   padding-bottom: 25px;
+   
+    list-style-type:none ;
+}
+.menu-link{
+ color: #000;
+ font-weight: bold;
 }
 
 /*/* Mobile Menu Styles 
@@ -92,7 +123,7 @@ margin-top: -15px;
     
 }
 
-.cart-count{
+#cart-count{
     position: absolute;
     left: 10px;
     top: -6px;
@@ -111,7 +142,7 @@ margin-top: -15px;
     display: none;
 }
 
-.empty-cart{
+#empty-cart{
     color: hsl(219, 9%, 45%);
     text-align: center;
   padding: 40px 0;
@@ -143,21 +174,25 @@ hr.cart-hr{
     -o-border-radius: 4px;
     margin-left: 20px;
 }
-.dropdown{
+#dropdown{
     position: absolute;
-    top: 50px;
-   left: -188px;
-          width: 340px;
-          height: 205px;
+    top: -350px;
+    left: -188px;
+    width: 340px;
+    height: 205px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    display: none;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-   
+    transition:1s ease ;
+    -webkit-transition:1s ease ;
+    -moz-transition:1s ease ;
+    -ms-transition:1s ease ;
+    -o-transition:1s ease ;
+    z-index: 1000;
 }
 
 .cart-contents{
@@ -235,20 +270,14 @@ hr.nav-hr{
     width: 95%;
 }
 
-.mobile{
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: -5px;
- padding-left: 10px;
-            /*padding: 25px;*/
-}
+
 /*ssssssection*/
 .section{
     position: relative;
     width:90%;
-    margin-top: 80px;
+   /* margin-top: 80px;*/
     display: inline-block;
+    margin: 80px ;
    /* justify-content: space-between;*/
    /* align-items: center;*/
    /*flex-direction: row;*/
@@ -469,6 +498,17 @@ svg{
     .brand img{
 padding-left: 10px;
     }
+
+#mobile{
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -5px;
+    border: none;
+    background-color: #ffffff;
+    padding-left: 15px;
+            /*padding: 25px;*/
+}
 .section {
     width: 90%;
     flex-direction: column;
@@ -492,7 +532,6 @@ padding-left: 10px;
                 flex: 1 1 auto;
                 width: 100%;
             }*/
-    .mobile{
-        display: block;
+   
     }
-        }
+        

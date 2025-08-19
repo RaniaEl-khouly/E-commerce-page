@@ -9,15 +9,37 @@
 </head>
 <body>
     <nav class="container">
-       <!-- <div>
-            <img class="menu" src="images/icon-menu.svg" alt="">
-        </div>-->
+         <button id="mobile"> <img class="menu" src="images/icon-menu.svg" alt=""></button>
         <a class="brand" href="#">
             <img src="images/logo.svg" alt="sneakers">
         </a>
+        <div id="side">
+            <div id="close"><img src="images/icon-close.svg" alt="close"></div>
+            <li class="menu-item">
+                <a class="menu-link" href="#">Collections</a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#">Men</a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#">Women</a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#">About</a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#">Contact</a>
+            </li>
+
+        </div>
         <ul class="navbar">
+           
             <li class="nav-item">
-                <a class="nav-link" href="#">Collection</a>
+                <a class="nav-link" href="#">Collections</a>
             </li>
 
             <li class="nav-item">
@@ -39,15 +61,15 @@
 
         <div class="logo">
                 <div class="cart" href="#">
-                    <img src="images/icon-cart.svg" alt="cart">
-                    <span class="cart-count"></span>
-                    <div class="dropdown">
+                    <img id="cartimg" src="images/icon-cart.svg" alt="cart">
+                    <span id="cart-count">0</span>
+                    <div id="dropdown">
                         
                         <h5 >Cart</h5>
                         <hr class="cart-hr">
                         <div>
-                            <div class="empty-cart">Your cart is empty</div>
-                            <div id="filled-cart" style="display: none;">
+                            <div id="empty-cart">Your cart is empty</div>
+                            <div id="filled-cart" >
                                 <div class="cart-contents">
                                   <div class="cart-thum"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
                                   <div class="cart-details">
@@ -69,10 +91,7 @@
            </div>
            
     </nav>
-    <div class="mobile">
-            <img src="images/icon-menu.svg">
-            
-           </div>
+    
     <hr class="nav-hr">
     <!--section-->
     <div class="section">
@@ -134,5 +153,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
